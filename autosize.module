@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * JQuery Autosize.
+ *
+ * @see http://www.jacklmoore.com/autosize/
+ */
+
+/**
+ * implement @see hook_page_attachments()
+ */
+function autosize_page_attachments(array &$attachments)
+{
+  $config = \Drupal::service('config.factory')->get('autosize.settings');
+
+  // Add the autosize library.
+  if (!empty($config->get('trigger'))) {
+    $trigger = $config->get('trigger');
+    $trigger = explode("\n", $trigger);
+    $trigger = array_filter($trigger);
+    $trigger = implode(',', $trigger);
+
+    $attachments['#attached']['drupalSettings']['autosize'] = array (
+      'trigger' => $trigger,
+    );
+    $attachments['#attached']['library'][] = 'autosize/autosize';
+  }
+}

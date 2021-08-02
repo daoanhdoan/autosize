@@ -1,0 +1,7 @@
+autosize.settings:
+  path: /admin/config/user-interface/autosize
+  defaults:
+    _title: Autosize
+    _form: \Drupal\autosize\Form\AutosizeSettings
+  requirements:
+    _permission: 'administer autosize'

@@ -1,0 +1,6 @@
+name: jQuery Autosize
+description: Textarea elements will automatically add rows as more lines of text are added inside.
+package: User interface
+type: module
+core_version_requirement: ^9
+

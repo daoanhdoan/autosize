@@ -1,0 +1,17 @@
+autosize:
+  js:
+    js/autosize.js: {}
+  dependencies:
+    - autosize/autosize.min
+
+autosize.min:
+  remote: https://github.com/jackmoore/autosize
+  license:
+    name: MIT
+    url: https://github.com/jackmoore/autosize/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    /libraries/autosize/dist/autosize.min.js: { minified: true }
+  dependencies:
+    - core/jquery.once
+    - core/drupal

@@ -1,0 +1,5 @@
+autosize.settings:
+  route_name: autosize.settings
+  title: 'Autosize Settings'
+  description: 'Configure settings for Autosize.'
+  parent: system.admin_config_ui
