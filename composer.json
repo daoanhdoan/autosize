@@ -2,7 +2,7 @@
     "name" : "daoanhdoan/autosize",
     "description": "jQuery Autosize - Textarea elements will automatically add rows as more lines of text are added inside.",
     "type" : "drupal-custom-module",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0+",
     "extra": {
         "installer-name": "autosize"
     },
